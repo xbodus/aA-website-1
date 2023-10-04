@@ -10,19 +10,22 @@
     <body>
         <header>
             <!--This is where our newly created logo is going to be-->
-            <img id="banner-img" src="file://wsl.localhost/Ubuntu/root/appAcademy/aA-classwork/aA-website-1/Jack%20Rabbit/Jack%20Rabbit/jack-rabbit_logo.png.png" alt="Jack Rabbit Type">
-            <div class="navbar">
-                <a class="active" href="website-1-cartoons-home.html">HOME</a>
-                <a href="#home">SURVEY</a>
-                <a href="#home">LINKS</a>
-                <a href="#home">ARCHIVE</a>
-            </div>
+            <img id="banner-img" src="file://wsl.localhost/Ubuntu/root/appAcademy/aA-classwork/aA-website-1/jack-rabbit_logo.png.png" alt="Jack Rabbit Type">
         </header>
+        <nav class="navbar">
+                <a class="active" href="website-1-cartoons-home.html">HOME</a>
+                <a href="website-1-cartoons-survey.html">SURVEY</a>
+                <a href="website-1-cartoons-links.html">LINKS</a>
+                <a href="website-1-cartoons-archive.html">ARCHIVE</a>
+        </nav>
         <main>
-            <h1>Cartoons: More than silly?</h1>
+            <h1>Cartoons: <em>More than silly?</em></h1>
+            <figcaption class="by">by Jack Rabbit Publishing</figcaption>
             <div class="hero">
                 <!--This is where a gif will be used to capture the viewers attention-->
-                <img src="https://i.pinimg.com/originals/b6/cc/a5/b6cca592c8a9289c20a60b79fe9e1621.gif">
+                <div class="container">
+                    <img src="https://i.pinimg.com/originals/b6/cc/a5/b6cca592c8a9289c20a60b79fe9e1621.gif" id="hero-img">
+                </div>
                 <figcaption></figcaption>
             </div>
             <section class="main-content">
@@ -35,6 +38,8 @@
                         that come along with the real world and where life is full of endless possibilities. A place where you have nothing but time to cultivate the limitlessness of imagination
                         and dreams. A time I think if you talk to any adult, almost all would ask to go back to. At it's core, cartoons are just that, an expression of imagination and dreams.</p>
                 </div>
+                <br>
+                <br>
                 <div class="p2">
                     <h2>What makes cartoons resonate?</h2>
                     <p>Shows like Adventure Time, Amazing World of Gumball, Fairly Odd Parents, and Gravity Falls. Shows like the superheros of DC and Marvel. Anime like Naruto, My Hero Acedamia,
@@ -45,6 +50,8 @@
                         something to think about and possibly apply to real life. They say it's good to learn from your lessons, but a wise man learns from other's lessons, or something like that. Well that
                         applies here in these stories, just as they have for all forms of story media throughout the ages.</p>
                 </div>
+                <br>
+                <br>
                 <div class="p3">
                     <h2>The evolution of animation</h2>
                     <p>Animation is an involved and difficult medium to pull off. Take a 22 minute episode for your favorite tv show. The industry standard is 24 frames per second. PER SECOND! If my math is
@@ -56,11 +63,13 @@
                         limits. From character physics to world building and new technologies, the medium has developed a vast and colorful catalog to entertain all sorts of audiences. As technologies evolve one
                         thing remains constant, the necessity of good story and characters for the audience. Here's to the future of animation, and the stories to come.</p>
                 </div>
+                <div>
+                    <img id="stamp" src="Jack-rabbit-stamp.png" alt="Jack Rabbit Logo">
+                </div>
+                <p class="footer-caption">If you enjoyed the article, let us know!</p>
             </section>
+
         </main>
-        <footer>
-            <caption>If you enjoyed the article, let us know!</caption>
-            <img id="stamp" src="file://wsl.localhost/Ubuntu/root/appAcademy/aA-classwork/aA-website-1/Jack%20Rabbit/Jack%20Rabbit/jack-rabbit_mascot.png" alt="Jack Rabbit Logo">
-        </footer>
+
     </body>
 </html>
