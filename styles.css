@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background: #1BA300;
+    background: #692208;
     height: 50px;
     width: 100%;
     margin-bottom: 2em;
@@ -65,11 +65,33 @@ nav {
 }
 
 nav a {
+    position: relative;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-style: italic;
     color: #692208;
+    padding: 2px;
+}
+
+nav a::before {
+    content: '';
+    position: absolute;
+    background-color: #E17000;
+    top: 85%;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    transition: .3s;
+}
+
+nav a:hover::before {
+    color: #E17000;
+    width: 100%;
+}
+
+nav a:hover {
+    color: #E17000;
 }
 
 .main-content {
@@ -83,10 +105,15 @@ p {
     text-indent: 50px;
 }
 
-footer {
-    height: 50px;
-    width: 100%;
-    background-color: #E17000;
+#stamp {
+    position: relative;
+    top:2em;
+    left: 20px;
+    width: 100px;
+    height: 100px;
+    filter: invert(9%) sepia(90%) saturate(3566%) hue-rotate(24deg) brightness(97%) contrast(94%);
+    opacity: 50%;
+    margin-bottom: 1em;
 }
 
 .footer-caption {
@@ -94,14 +121,30 @@ footer {
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
     margin-left: calc(50% - 175px);
+    font-style: italic;
 }
 
-#stamp {
-    position: relative;
-    top:1em;
+fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ fieldset textarea {
+    border: none;
+    margin: 10px 0;
+    background-color: #fffcf1;
+    color: #692208
+}
+
+input {
     width: 100px;
-    height: 100px;
-    filter: invert(9%) sepia(90%) saturate(3566%) hue-rotate(24deg) brightness(97%) contrast(94%);
-    opacity: 50%;
-    margin-bottom: 1em;
+    border: none;
+    background-color: #692208;
+    color: #F5EBCC;
+}
+
+input:hover {
+    background-color: #E17000;
 }
