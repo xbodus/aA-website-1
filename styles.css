@@ -1,0 +1,11 @@
+#banner-img {
+    transform: scale(50%);
+}
+
+#stamp {
+    transform: scale(15%);
+    position: absolute;
+    top: 900px;
+    right: 500px;
+
+}
