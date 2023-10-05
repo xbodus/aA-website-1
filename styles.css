@@ -1,6 +1,4 @@
-* {
-    box-sizing: border-box;
-}
+/*          HOME page CSS            */
 body {
     background: #F5EBCC;
     margin: 0;
@@ -80,7 +78,7 @@ nav a::before {
     background-color: #E17000;
     top: 85%;
     left: 0;
-    width: 0%;
+    width: 0;
     height: 3px;
     transition: .3s;
 }
@@ -112,7 +110,7 @@ p {
     width: 100px;
     height: 100px;
     filter: invert(9%) sepia(90%) saturate(3566%) hue-rotate(24deg) brightness(97%) contrast(94%);
-    opacity: 50%;
+    opacity: .5;
     margin-bottom: 1em;
 }
 
@@ -124,27 +122,96 @@ p {
     font-style: italic;
 }
 
-fieldset {
+.input-home {
     border: none;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
- fieldset textarea {
+
+.input-home .viewer-input {
     border: none;
     margin: 10px 0;
     background-color: #fffcf1;
     color: #692208
 }
 
-input {
+.home-submit {
     width: 100px;
     border: none;
     background-color: #692208;
     color: #F5EBCC;
 }
 
-input:hover {
+.home-submit:hover {
+    background-color: #E17000;
+}
+
+/*          SURVEY page CSS            */
+.survey-main {
+    margin-top: 2em;
+    margin-bottom: 6em;
+}
+
+.survey {
+    width: 500px;
+    height: 635px;
+    margin: auto;
+    padding: 10px 30px;
+    background-color: #F5EBCC ;
+    border: 2px solid #692208;
+    border-radius: 10px;
+}
+
+.survey-head {
+    font-size: 25px;
+    font-style: italic;
+    margin-bottom: 1em;
+}
+
+label {
+    display: block;
+    margin: .5em 0;
+    font-family: 'Roboto', sans-serif;
+    color:#692208;
+    font-weight: bold;
+}
+
+.normal {
+    font-weight: normal;
+}
+
+input:not(.radio, .home-submit, input[type="checkbox"]), textarea {
+    width: 100%;
+    margin: 5px 0 20px 0;
+    padding: 4px;
+    color: #692208;
+    border: 2px solid #692208;
+    border-radius: 5px;
+    background-color: #fffcf1;
+}
+
+::placeholder {
+    color: #692208;
+    opacity: .7;
+}
+
+.survey-submit {
+    position: relative;
+    top: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    background-color: #692208;
+    color: #F5EBCC;
+    padding: 4px;
+}
+
+.survey-submit:hover {
     background-color: #E17000;
 }

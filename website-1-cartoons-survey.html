@@ -19,5 +19,38 @@
                 <a href="website-1-cartoons-archive.html">ARCHIVE</a>
             </nav>
 
-        <main>
+        <main class="survey-main">
+            <h1 class="survey-head">What Do Cartoons Mean to You?</h1>
+            <form>
+                <fieldset class="survey">
+                    <div>
+                        <label for="name">Name: <input id="name" type="text" name="full name" placeholder="Full Name" required></label>
+                    </div>
+                    <div>
+                        <label for="age">Age: <input id="age" type="number" name="age" min="0" max="120" placeholder="23" required></label>
+                    </div>
+                    <div>
+                        <label for="favcartoon">Favorite Cartoon: <input id="favcartoon" type="text" name="favcartoon" placeholder="Looney Tunes" required></label>
+                    </div>
+                    <div>
+                        <label for="startage">When did you first get into cartoons? <input id="startage" type="number" name="startage" placeholder="12" required></label>
+                    </div>
+                    <div>
+                        <label for="watcher">Do you still watch cartoons?</label>
+                        <label for="yes" class="normal"><input id="yes" name="watcher" type="radio" value="yes" class="radio" /> Yes</label>
+                        <label for="no" class="normal"><input id="no" name="watcher" type="radio" value="no"  class="radio" /> No </label>
+                    </div>
+                    <div>
+                        <label>What do cartoons mean for you? <textarea rows="5" placeholder="Cartoons to me mean..."></textarea></label>
+                    </div>
+                    <div>
+                        <label>Would you like to sign up for our trending cartoons newsletter?</label>
+                        <label for="yes" class="normal"><input id="yes" type="checkbox" value="sign up" checked /> Sign up</label>
+                        <label for="no" class="normal"><input id="no" type="checkbox" value="decline" /> Decline</label>
+                    </div>
+                    <button id="submit" name="submit" type="submit" value="submit" class="survey-submit">Thank You!</button>
+                </fieldset>
+
+            </form>
+        </main>
     </body>
